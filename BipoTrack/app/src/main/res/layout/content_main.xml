@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/mood_selector"
+        android:id="@+id/mood_selectr_cata"/>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_below="@id/mood_selectr_cata"
+        android:text="This is a check box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/date_picker_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_box"
+        android:layout_centerHorizontal="true"
+        android:text="Date Picker" />
+
+    <Button
+        android:id="@+id/date_range_picker_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Range Date Picker" />
+
+    <Button
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_range_picker_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Time Picker" />
+
+    <Button
+        android:id="@+id/confirmation_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_picker"
+        android:layout_centerHorizontal="true"
+        android:text="Confirmation Dialog" />
+    <Button
+        android:id="@+id/list_dialog_with_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmation_dialog_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Single choice List Dialog" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:text="This is a swither"
+        android:layout_below="@id/list_dialog_with_item_btn"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/switcher"
+        android:layout_gravity="center"
+        android:value="60"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:stepSize="1"
+    />
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/range_slider"
+        android:layout_below="@id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        app:values="@array/initial_slider_values"
+        android:valueFrom="0.0"
+        android:valueTo="11.0"
+        android:stepSize="1" />
+
+</RelativeLayout>
