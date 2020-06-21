@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Galaxy_S9_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RZ8M630ZDQN" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -33,10 +33,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\mykey.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="ProjectId" id="1co5SQP1YlJ5rh7tUFtFMcloka8" />
   <component name="ProjectViewState">
@@ -45,16 +52,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="BundleExportedModule" value="app" />
+    <property name="ExportApk.ApkPath" value="C:\Users\HP\Desktop\Assigments_XD" />
+    <property name="ExportApk.BuildVariants" value="debug&#10;release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AidkitMap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\menu" />
       <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res" />
       <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res\drawable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\drawable" />
+      <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\drawable\mood" />
       <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res\drawable" />
     </key>
   </component>
@@ -130,5 +146,51 @@
       <updated>1591182104378</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592068135931">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592068135931" />
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1592206310048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1592206310048" />
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1592207289505">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1592207289505" />
+    <state x="463" y="91" key="FileChooserDialogImpl" timestamp="1592214322492">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="91" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592214322492" />
+    <state width="1286" height="121" key="GridCell.Tab.0.bottom" timestamp="1592141356255">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="121" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592141356255" />
+    <state width="1286" height="121" key="GridCell.Tab.0.center" timestamp="1592141356254">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="121" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
+    <state width="1286" height="121" key="GridCell.Tab.0.left" timestamp="1592141356254">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="121" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
+    <state width="1286" height="121" key="GridCell.Tab.0.right" timestamp="1592141356254">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="121" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
+    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1592056213010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1592056213010" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592122601114">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592122601114" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592063359034">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592063359034" />
   </component>
 </project>
