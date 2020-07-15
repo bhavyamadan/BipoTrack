@@ -1,38 +1,19 @@
 package com.example.bipotrack;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.util.Pair;
-import androidx.viewpager2.widget.ViewPager2;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.DragEvent;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.CompoundButton;
-import android.widget.Toast;
-import android.widget.Button;
+import android.util.Log;
 
-import com.google.android.material.datepicker.CalendarConstraints;
-import com.google.android.material.datepicker.DateValidatorPointBackward;
-import com.google.android.material.datepicker.MaterialDatePicker;
-import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.slider.RangeSlider;
-import com.google.android.material.slider.Slider;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.switchmaterial.SwitchMaterial;
+import com.example.bipotrack.database.entites.DatabaseHelper;
 import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
-import android.widget.TimePicker;
-import android.app.TimePickerDialog;
-import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    DatabaseHelper myDb;
+    static TabLayout menu;
 
 
     @Override
@@ -40,15 +21,37 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /** Database */
+        myDb = new DatabaseHelper(this);
+        myDb.onCreate(myDb.getWritableDatabase());
 
+
+        //myDb.onUpgrade(myDb.getWritableDatabase(),0,0);
+
+        /** NoteTable
+        Log.e("DATABESE", "------------ NoteTable ----------");
+        NoteTable noteTable = new NoteTable(myDb.getWritableDatabase(),getBaseContext());
+        long noteId = noteTable.insertData("I feel too bad");
+        noteTable.getAllData();
+
+
+        /** NoteMoodTable
+        Log.e("DATABESE", "------------ NoteMoodTable ----------");
+        NoteMoodsTable noteMoodsTable = new NoteMoodsTable(myDb.getWritableDatabase(),getBaseContext());
+        HashMap<Integer,Integer> noteMoods = new HashMap<>();
+        noteMoods.put(Moods.DEPRESSED, 10);
+        noteMoods.put(Moods.MEH, 100);
+        noteMoodsTable.insertData(noteMoods,noteId);
+        noteMoodsTable.getAllData();
+         */
 
         /** Menu **/
-        TabLayout menu = findViewById(R.id.tabs);
+        menu = findViewById(R.id.tabs);
         ViewPager viewPager = findViewById(R.id.view_page);
         MoodFragment moodFrag = new MoodFragment();
         ProfileFragment profileFragment = new ProfileFragment();
         CalendarFragment calendarFragment = new CalendarFragment();
-        menu.setupWithViewPager(viewPager);
+
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(moodFrag);
@@ -56,9 +59,34 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(profileFragment);
         viewPager.setAdapter(viewPagerAdapter);
 
+        menu.setupWithViewPager(viewPager);
+
         menu.getTabAt(0).setIcon(R.drawable.ic_home_black_24dp);
         menu.getTabAt(1).setIcon(R.drawable.ic_calendar_black_24dp);
         menu.getTabAt(2).setIcon(R.drawable.ic_person_black_24dp);
+        menu.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int position =  menu.getSelectedTabPosition();
+                if(position  == 1 && CalendarFragment.created == true) {
+                    Log.e("Okay","selected Calendar");
+                    CalendarFragment.refresh(CalendarFragment.myview);
+                }
+                if(position  == 2 && ProfileFragment.created == true) {
+                    Log.e("Okay","share");
+                    ProfileFragment.refresh();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
     }
         /*
 

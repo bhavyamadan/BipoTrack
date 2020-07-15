@@ -29,14 +29,17 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BipoTrack" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
         <option value="Kotlin Class" />
-        <option value="Class" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,18 +63,24 @@
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AidkitMap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\java\com\example\bipotrack\database" />
+      <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\java\com\example\bipotrack" />
       <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\menu" />
       <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res" />
       <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res\drawable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res\drawable" />
+      <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\assets" />
       <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\drawable" />
       <recent name="C:\Users\HP\AndroidStudioProjects\okbio\BipoTrack\app\src\main\res\drawable\mood" />
-      <recent name="C:\Users\HP\AndroidStudioProjects\BipoTrack\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -148,49 +157,84 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592068135931">
+    <state x="200" y="96" key="#PSD" timestamp="1593359087132">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592068135931" />
-    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1592206310048">
+    <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1593359087132" />
+    <state x="437" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593366064200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1592206310048" />
-    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1592207289505">
+    <state x="437" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1593366064200" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1594024246215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1592207289505" />
-    <state x="463" y="91" key="FileChooserDialogImpl" timestamp="1592214322492">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594024246215" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594726805884">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="91" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592214322492" />
-    <state width="1286" height="121" key="GridCell.Tab.0.bottom" timestamp="1592141356255">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594726805884" />
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1593361056862">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="121" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592141356255" />
-    <state width="1286" height="121" key="GridCell.Tab.0.center" timestamp="1592141356254">
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1593361056862" />
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1594815157092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="121" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
-    <state width="1286" height="121" key="GridCell.Tab.0.left" timestamp="1592141356254">
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1594815157092" />
+    <state x="463" y="91" key="FileChooserDialogImpl" timestamp="1594830942951">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="121" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
-    <state width="1286" height="121" key="GridCell.Tab.0.right" timestamp="1592141356254">
+    <state x="463" y="91" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594830942951" />
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1594828841037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="121" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592141356254" />
-    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1592056213010">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594828841037" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1594828841033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1592056213010" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592122601114">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594828841033" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1594828841033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592122601114" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592063359034">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594828841033" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1594828841037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592063359034" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594828841037" />
+    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1594810696325">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1594810696325" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1594830598622">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594830598622" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1594049685470">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594049685470" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594822303850">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594822303850" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/bipotrack/database/CRUD/SelectedMoodTable.java</url>
+          <line>209</line>
+          <properties class="com.example.bipotrack.database.CRUD.SelectedMoodTable">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/bipotrack/database/CRUD/SelectedMoodTable.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

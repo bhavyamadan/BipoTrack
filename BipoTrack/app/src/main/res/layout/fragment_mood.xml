@@ -15,105 +15,10 @@
             android:layout_height="match_parent"
             >
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/period_card"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                >
-                <LinearLayout
-                    android:id="@+id/periode_left_days"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/periode_nb_left_days"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="17"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="30sp" />
-
-                        <TextView
-                            android:id="@+id/periode_text_left_days"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="DAYS LEFT"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="1dp"
-                        android:background="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/period_next_date"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="June 30"
-                            android:textColor="@color/colorOnPrimary"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/period_next_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="Next Period"
-                            android:textColor="@color/colorOnPrimary"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="1dp"
-                        android:background="@color/colorPrimary">
-
-                        <TextView
-                            android:id="@+id/fertility_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="Fertility window"
-                            android:textColor="@color/colorOnPrimary"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="right|end">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/colorAccent"
-                            app:icon="@drawable/ic_baseline_play_arrow_24"
-                            android:text="Start Period"
-                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-                            app:iconTint="@color/colorAccent"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/mood_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:layout_below="@id/period_card"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -131,10 +36,47 @@
                         android:id="@+id/mood_selectr_cata"/>
                     <LinearLayout
                         android:id="@+id/place"
-                        android:layout_marginTop="60dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"/>
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mood_select_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please select your mood"
+                             />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mood_feeling_text"
+                            android:layout_weight=".6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            />
+                        <com.google.android.material.button.MaterialButton
+                            android:visibility="gone"
+                            android:id="@+id/mood_feeling_btn_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="QUICK SAVE"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                        <com.google.android.material.button.MaterialButton
+                            android:visibility="invisible"
+                            android:id="@+id/mood_feeling_btn_write"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorAccent"
+                            android:text="ADD NOTES"
+                            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -153,33 +95,33 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tasks for today"
+                        android:text="Mood of"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
-                    <TextView
-                        android:id="@+id/tasks_completed_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="50% completed"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
-                    <ProgressBar
-                        android:id="@+id/p_Bar"
-                        style="?android:attr/progressBarStyleHorizontal"
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:max="100"
-                        android:progress="50" />
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorAccent"
-                        app:icon="@drawable/ic_baseline_remove_red_eye_24"
-                        android:text="HIDE COMPLETED"
-                        android:layout_gravity="right"
-                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-                        app:iconTint="@color/colorAccent"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/text_notes_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jul 4,2020"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_notes_select_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:icon="@drawable/ic_baseline_calendar_today_24"
+                            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                            app:iconTint="@color/colorAccent"
+                            app:iconSize="15dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            />
+                    </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerView"
                         android:layout_width="match_parent"
@@ -190,21 +132,9 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
         </RelativeLayout>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/weight_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            app:fabSize="normal"
-            android:layout_marginBottom="180dp"
-            android:layout_marginRight="16dp"
-            android:backgroundTint="@color/colorOnPrimary"
-            android:elevation="6dp"
-            app:pressedTranslationZ="12dp"
-            app:srcCompat="@drawable/ic_baseline_speed_24"
-            android:visibility="invisible"></com.google.android.material.floatingactionbutton.FloatingActionButton>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/sleep_button"
+            android:id="@+id/calendar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
@@ -214,11 +144,11 @@
             android:backgroundTint="@color/colorOnPrimary"
             android:elevation="6dp"
             app:pressedTranslationZ="12dp"
-            app:srcCompat="@drawable/ic_baseline_nights_stay_24"
+            app:srcCompat="@drawable/ic_baseline_calendar_today_24"
             android:visibility="invisible"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/habit_button"
+            android:id="@+id/share_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
@@ -228,7 +158,7 @@
             android:elevation="6dp"
             app:fabSize="normal"
             app:pressedTranslationZ="12dp"
-            app:srcCompat="@drawable/ic_baseline_bookmarks_24"
+            app:srcCompat="@drawable/ic_baseline_share_24"
             android:visibility="invisible"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

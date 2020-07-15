@@ -12,4 +12,9 @@
     <color name="icon">#FFFFFF</color>
     <color name="grey">#C5CAE9</color>
     <color name="primaryText">#212121</color>
+
+
+    <color name="success">#5cb85c</color>
+    <color name="danger">#d9534f</color>
+
 </resources>

@@ -1,13 +1,20 @@
 package com.example.bipotrack;
 
 import android.app.Activity;
+import android.content.DialogInterface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class ListAdapterIconText extends ArrayAdapter<String> {
 
@@ -16,12 +23,15 @@ public class ListAdapterIconText extends ArrayAdapter<String> {
     private final Integer[] icons;
     private int selectedItem;
 
-    public ListAdapterIconText(Activity context, String[] items, Integer[] icons) {
+    private boolean withImages;
+
+    public ListAdapterIconText(Activity context, String[] items, Integer[] icons, boolean withImages) {
         super(context, R.layout.list_item_icon_text, items);
         this.context = context;
         this.items = items;
         this.icons = icons;
         this.selectedItem = -1;
+        this.withImages = withImages;
     }
 
     public int getSelectedItem(){
@@ -49,8 +59,17 @@ public class ListAdapterIconText extends ArrayAdapter<String> {
         View rowView= inflater.inflate(R.layout.list_item_icon_text, null, true);
         TextView txtTitle = rowView.findViewById(R.id.txt);
         ImageView imageView = rowView.findViewById(R.id.img);
-        txtTitle.setText(items[position]);
+
+
         imageView.setImageResource(icons[position]);
+        if(withImages) {
+            imageView.getLayoutParams().height = 100;
+            imageView.getLayoutParams().width = 100;
+        }
+        txtTitle.setText(items[position]);
+
         return rowView;
     }
+
+
 }
